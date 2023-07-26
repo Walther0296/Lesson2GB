@@ -27,10 +27,16 @@ int sym2;
 if (100>num2) {
   Console.WriteLine("Третьей цифры нет!");  
 }
-else 
-{   sym2=num2%100; 
-Console.WriteLine("Вторая цифра числа " + num2 + ": " + sym2);
+else {
+  if (num2<999) {
+  sym2 = num2/100;
 }
+else {while (num2>999){
+  num2 = num2/10; 
+}
+sym2 = num2%10;
+}
+Console.WriteLine("Третья цифра числа " + num2 + ": " + sym2);
 
 
 // Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
@@ -48,4 +54,4 @@ else
 {   
     if (num3<5) {Console.WriteLine("Нет");}
     else {Console.WriteLine("Да");}
-}
+}}
