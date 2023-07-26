@@ -4,7 +4,7 @@
 // 782 -> 8
 // 918 -> 1
 Console.WriteLine("Задание №1");
-Console.WriteLine("Введите число а:");
+Console.Write("Введите число а: ");
 int num = Convert.ToInt32 (Console.ReadLine ());
 int sym;
 if (100>num || num>999) {
@@ -21,10 +21,10 @@ Console.WriteLine("Вторая цифра числа " + num + ": " + sym);
 // 78 -> третьей цифры нет
 // 32679 -> 6
 Console.WriteLine("Задание №2");
-Console.WriteLine("Введите число а:");
+Console.Write("Введите число а:");
 int num2 = Convert.ToInt32 (Console.ReadLine ());
 int sym2;
-if (100>num) {
+if (100>num2) {
   Console.WriteLine("Третьей цифры нет!");  
 }
 else 
@@ -38,3 +38,14 @@ Console.WriteLine("Вторая цифра числа " + num2 + ": " + sym2);
 // 7 -> да
 // 1 -> нет
 Console.WriteLine("Задание №3");
+Console.Write("Введите порядковый номер дня недели:");
+int num3 = Convert.ToInt32 (Console.ReadLine ());
+
+if (1 > num3 || num3 > 7) {
+  Console.WriteLine("Введен некорректный порядковый номер дня недели! ");  
+}
+else 
+{   
+    if (num3<5) {Console.WriteLine("Нет");}
+    else {Console.WriteLine("Да");}
+}
